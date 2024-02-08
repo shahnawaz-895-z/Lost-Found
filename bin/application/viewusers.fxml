@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewusersController">
+
+    <TableView fx:id="table_items" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="col_userID" prefWidth="152.79998779296875" text="User ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="itemID" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="col_username" prefWidth="196.79998779296875" text="User Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="itemName" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="col_password" prefWidth="251.20001220703125" text="Password">
+                <cellValueFactory>
+                    <PropertyValueFactory property="itemDescription" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+</HBox>

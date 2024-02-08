@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewallitemsController">
+
+    <TableView fx:id="table_items" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="col_itemID" text="Item ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="itemID" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="col_itemName" prefWidth="114.4000244140625" text="Item Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="itemName" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="col_itemDescription" prefWidth="276.79998779296875" text="Item Description">
+                <cellValueFactory>
+                    <PropertyValueFactory property="itemDescription" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="col_itemStatus" prefWidth="127.20001220703125" text="Item Status">
+                <cellValueFactory>
+                    <PropertyValueFactory property="itemStatus" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+</HBox>

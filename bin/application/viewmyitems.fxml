@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewmyitemsController">
+   <children>
+      <TableView fx:id="table_items" prefHeight="400.0" prefWidth="605.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Item_ID" />
+          <TableColumn prefWidth="75.0" text="Item_Name" />
+            <TableColumn prefWidth="340.7999267578125" text="Item_description" />
+            <TableColumn prefWidth="105.60003662109375" text="Item_Status" />
+        </columns>
+      </TableView>
+   </children>
+</HBox>
